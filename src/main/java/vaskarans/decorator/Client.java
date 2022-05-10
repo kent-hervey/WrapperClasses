@@ -10,6 +10,16 @@ public class Client {
         Home home = new BasicHome();
         System.out.println("Total cost: $" + home.getPrice());
 
+        //Scenario 2
+
+        System.out.println("\nScenario-2: Making a basic home, then adding a playground.");
+
+        home = new BasicHome();
+        home = new Playground(home);
+        System.out.println("Total cost: $" + home.getPrice());
+
+        //Scenario 3
+
     }
 
 }
