@@ -20,6 +20,14 @@ public class Client {
 
         //Scenario 3
 
+        System.out.println("\nScenario-3: Making a basic home, then adding two playgrounds one-by-one.");
+        home = new BasicHome();
+        home = new Playground(home);
+        home = new Playground(home);
+        System.out.println("Total cost: $" + home.getPrice());
+
+        //Scenario 4
+
     }
 
 }
